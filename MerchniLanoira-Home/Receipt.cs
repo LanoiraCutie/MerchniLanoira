@@ -52,5 +52,10 @@ namespace MerchniLanoira_Home
             MessageBox.Show("Bought successfully. Item will be magically coming to you within 24 hours.", prod + " bought!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

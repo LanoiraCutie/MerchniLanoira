@@ -71,5 +71,15 @@ namespace MerchniLanoira_Home
             Product8 prod8 = new Product8();
             prod8.Show();
         }
+
+        private void WelcomeText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProductText_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

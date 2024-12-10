@@ -28,234 +28,199 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             WelcomeText = new Label();
             ProductText = new Label();
             GProductText1 = new Label();
-            Pic1 = new Label();
-            BuyButton1 = new Button();
-            GProductText2 = new Label();
-            Pic3 = new Label();
-            Pic4 = new Label();
-            BuyButton3 = new Button();
-            Pic5 = new Label();
-            BuyButton4 = new Button();
-            BuyButton5 = new Button();
             GProductText3 = new Label();
-            Pic6 = new Label();
-            Pic7 = new Label();
-            Pic8 = new Label();
-            BuyButton6 = new Button();
-            BuyButton7 = new Button();
-            BuyButton8 = new Button();
+            pictureBox1 = new PictureBox();
+            GProductText2 = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            button1 = new Button();
+            label6 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // WelcomeText
             // 
             WelcomeText.AutoSize = true;
+            WelcomeText.BackColor = SystemColors.ButtonHighlight;
+            WelcomeText.Font = new Font("Palatino Linotype", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             WelcomeText.Location = new Point(12, 9);
             WelcomeText.Name = "WelcomeText";
-            WelcomeText.Size = new Size(60, 15);
+            WelcomeText.Size = new Size(0, 28);
             WelcomeText.TabIndex = 0;
-            WelcomeText.Text = "Welcome!";
+            WelcomeText.Click += WelcomeText_Click;
             // 
             // ProductText
             // 
             ProductText.AutoSize = true;
-            ProductText.Location = new Point(12, 47);
+            ProductText.BackColor = Color.Transparent;
+            ProductText.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ProductText.ForeColor = SystemColors.ButtonFace;
+            ProductText.Location = new Point(134, 17);
             ProductText.Name = "ProductText";
-            ProductText.Size = new Size(54, 15);
+            ProductText.Size = new Size(50, 20);
             ProductText.TabIndex = 1;
-            ProductText.Text = "Products";
+            ProductText.Text = "Home";
+            ProductText.Click += ProductText_Click;
             // 
             // GProductText1
             // 
             GProductText1.AutoSize = true;
-            GProductText1.Location = new Point(12, 84);
+            GProductText1.BackColor = SystemColors.ButtonHighlight;
+            GProductText1.Location = new Point(321, 14);
             GProductText1.Name = "GProductText1";
-            GProductText1.Size = new Size(37, 15);
+            GProductText1.Size = new Size(0, 15);
             GProductText1.TabIndex = 2;
-            GProductText1.Text = "Mugs";
             GProductText1.Click += GProductText1_Click;
-            // 
-            // Pic1
-            // 
-            Pic1.AutoSize = true;
-            Pic1.Location = new Point(26, 124);
-            Pic1.Name = "Pic1";
-            Pic1.Size = new Size(61, 15);
-            Pic1.TabIndex = 3;
-            Pic1.Text = "[Picture 1]";
-            // 
-            // BuyButton1
-            // 
-            BuyButton1.Location = new Point(31, 159);
-            BuyButton1.Name = "BuyButton1";
-            BuyButton1.Size = new Size(75, 23);
-            BuyButton1.TabIndex = 5;
-            BuyButton1.Text = "Buy";
-            BuyButton1.UseVisualStyleBackColor = true;
-            BuyButton1.Click += BuyButton1_Click;
-            // 
-            // GProductText2
-            // 
-            GProductText2.AutoSize = true;
-            GProductText2.Location = new Point(19, 222);
-            GProductText2.Name = "GProductText2";
-            GProductText2.Size = new Size(36, 15);
-            GProductText2.TabIndex = 7;
-            GProductText2.Text = "Shirts";
-            // 
-            // Pic3
-            // 
-            Pic3.AutoSize = true;
-            Pic3.Location = new Point(31, 276);
-            Pic3.Name = "Pic3";
-            Pic3.Size = new Size(61, 15);
-            Pic3.TabIndex = 8;
-            Pic3.Text = "[Picture 3]";
-            // 
-            // Pic4
-            // 
-            Pic4.AutoSize = true;
-            Pic4.Location = new Point(283, 276);
-            Pic4.Name = "Pic4";
-            Pic4.Size = new Size(61, 15);
-            Pic4.TabIndex = 9;
-            Pic4.Text = "[Picture 4]";
-            // 
-            // BuyButton3
-            // 
-            BuyButton3.Location = new Point(31, 319);
-            BuyButton3.Name = "BuyButton3";
-            BuyButton3.Size = new Size(75, 23);
-            BuyButton3.TabIndex = 10;
-            BuyButton3.Text = "Buy";
-            BuyButton3.UseVisualStyleBackColor = true;
-            BuyButton3.Click += BuyButton3_Click;
-            // 
-            // Pic5
-            // 
-            Pic5.AutoSize = true;
-            Pic5.Location = new Point(519, 276);
-            Pic5.Name = "Pic5";
-            Pic5.Size = new Size(61, 15);
-            Pic5.TabIndex = 11;
-            Pic5.Text = "[Picture 5]";
-            // 
-            // BuyButton4
-            // 
-            BuyButton4.Location = new Point(283, 319);
-            BuyButton4.Name = "BuyButton4";
-            BuyButton4.Size = new Size(75, 23);
-            BuyButton4.TabIndex = 12;
-            BuyButton4.Text = "Buy";
-            BuyButton4.UseVisualStyleBackColor = true;
-            BuyButton4.Click += BuyButton4_Click;
-            // 
-            // BuyButton5
-            // 
-            BuyButton5.Location = new Point(519, 319);
-            BuyButton5.Name = "BuyButton5";
-            BuyButton5.Size = new Size(75, 23);
-            BuyButton5.TabIndex = 13;
-            BuyButton5.Text = "Buy";
-            BuyButton5.UseVisualStyleBackColor = true;
-            BuyButton5.Click += BuyButton5_Click;
             // 
             // GProductText3
             // 
             GProductText3.AutoSize = true;
-            GProductText3.Location = new Point(13, 373);
+            GProductText3.BackColor = SystemColors.ButtonHighlight;
+            GProductText3.Location = new Point(421, 14);
             GProductText3.Name = "GProductText3";
-            GProductText3.Size = new Size(42, 15);
+            GProductText3.Size = new Size(0, 15);
             GProductText3.TabIndex = 14;
-            GProductText3.Text = "Others";
             GProductText3.Click += GProductText3_Click;
             // 
-            // Pic6
+            // pictureBox1
             // 
-            Pic6.AutoSize = true;
-            Pic6.Location = new Point(26, 420);
-            Pic6.Name = "Pic6";
-            Pic6.Size = new Size(61, 15);
-            Pic6.TabIndex = 15;
-            Pic6.Text = "[Picture 6]";
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-1, -5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(74, 66);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 21;
+            pictureBox1.TabStop = false;
             // 
-            // Pic7
+            // GProductText2
             // 
-            Pic7.AutoSize = true;
-            Pic7.Location = new Point(283, 420);
-            Pic7.Name = "Pic7";
-            Pic7.Size = new Size(61, 15);
-            Pic7.TabIndex = 16;
-            Pic7.Text = "[Picture 7]";
+            GProductText2.AutoSize = true;
+            GProductText2.BackColor = SystemColors.ButtonHighlight;
+            GProductText2.Location = new Point(231, 14);
+            GProductText2.Name = "GProductText2";
+            GProductText2.Size = new Size(0, 15);
+            GProductText2.TabIndex = 7;
             // 
-            // Pic8
+            // label1
             // 
-            Pic8.AutoSize = true;
-            Pic8.Location = new Point(519, 420);
-            Pic8.Name = "Pic8";
-            Pic8.Size = new Size(61, 15);
-            Pic8.TabIndex = 17;
-            Pic8.Text = "[Picture 8]";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(215, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 20);
+            label1.TabIndex = 22;
+            label1.Text = "Shirts";
             // 
-            // BuyButton6
+            // label2
             // 
-            BuyButton6.Location = new Point(31, 476);
-            BuyButton6.Name = "BuyButton6";
-            BuyButton6.Size = new Size(75, 23);
-            BuyButton6.TabIndex = 18;
-            BuyButton6.Text = "Buy";
-            BuyButton6.UseVisualStyleBackColor = true;
-            BuyButton6.Click += BuyButton6_Click;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(298, 17);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 20);
+            label2.TabIndex = 23;
+            label2.Text = "Mugs";
             // 
-            // BuyButton7
+            // label3
             // 
-            BuyButton7.Location = new Point(283, 476);
-            BuyButton7.Name = "BuyButton7";
-            BuyButton7.Size = new Size(75, 23);
-            BuyButton7.TabIndex = 19;
-            BuyButton7.Text = "Buy";
-            BuyButton7.UseVisualStyleBackColor = true;
-            BuyButton7.Click += BuyButton7_Click;
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ButtonFace;
+            label3.Location = new Point(382, 17);
+            label3.Name = "label3";
+            label3.Size = new Size(39, 20);
+            label3.TabIndex = 24;
+            label3.Text = "Hats";
             // 
-            // BuyButton8
+            // label4
             // 
-            BuyButton8.Location = new Point(519, 476);
-            BuyButton8.Name = "BuyButton8";
-            BuyButton8.Size = new Size(75, 23);
-            BuyButton8.TabIndex = 20;
-            BuyButton8.Text = "Buy";
-            BuyButton8.UseVisualStyleBackColor = true;
-            BuyButton8.Click += BuyButton8_Click;
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Sitka Text", 20.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.ButtonFace;
+            label4.Location = new Point(186, 188);
+            label4.Name = "label4";
+            label4.Size = new Size(617, 39);
+            label4.TabIndex = 25;
+            label4.Text = "\"We’re not just a group, we’re a sisterhood.\"";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Yu Gothic UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.ButtonFace;
+            label5.Location = new Point(393, 286);
+            label5.Name = "label5";
+            label5.Size = new Size(234, 25);
+            label5.TabIndex = 26;
+            label5.Text = "Check our Latest Products";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.Control;
+            button1.Location = new Point(421, 323);
+            button1.Name = "button1";
+            button1.Size = new Size(163, 43);
+            button1.TabIndex = 27;
+            button1.Text = "Shop Now";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.ButtonFace;
+            label6.Location = new Point(455, 17);
+            label6.Name = "label6";
+            label6.Size = new Size(54, 20);
+            label6.TabIndex = 28;
+            label6.Text = "Others";
             // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1144, 643);
-            Controls.Add(BuyButton8);
-            Controls.Add(BuyButton7);
-            Controls.Add(BuyButton6);
-            Controls.Add(Pic8);
-            Controls.Add(Pic7);
-            Controls.Add(Pic6);
+            BackColor = SystemColors.ButtonHighlight;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(980, 548);
+            Controls.Add(label6);
+            Controls.Add(button1);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Controls.Add(GProductText3);
-            Controls.Add(BuyButton5);
-            Controls.Add(BuyButton4);
-            Controls.Add(Pic5);
-            Controls.Add(BuyButton3);
-            Controls.Add(Pic4);
-            Controls.Add(Pic3);
             Controls.Add(GProductText2);
-            Controls.Add(BuyButton1);
-            Controls.Add(Pic1);
             Controls.Add(GProductText1);
             Controls.Add(ProductText);
             Controls.Add(WelcomeText);
+            DoubleBuffered = true;
             Name = "HomePage";
-            Text = "Home";
+            Text = "                   ";
             Load += HomePage_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -265,21 +230,21 @@
         private Label WelcomeText;
         private Label ProductText;
         private Label GProductText1;
-        private Label Pic1;
-        private Button BuyButton1;
-        private Label GProductText2;
         private Label Pic3;
         private Label Pic4;
-        private Button BuyButton3;
         private Label Pic5;
-        private Button BuyButton4;
-        private Button BuyButton5;
         private Label GProductText3;
         private Label Pic6;
         private Label Pic7;
         private Label Pic8;
-        private Button BuyButton6;
-        private Button BuyButton7;
-        private Button BuyButton8;
+        private PictureBox pictureBox1;
+        private Label GProductText2;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Button button1;
+        private Label label6;
     }
 }
