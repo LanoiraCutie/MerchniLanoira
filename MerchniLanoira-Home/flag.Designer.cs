@@ -37,7 +37,6 @@
             QuantityBox = new TextBox();
             QuantityText = new Label();
             Price = new Label();
-            ProdDescription1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -56,7 +55,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(368, 68);
+            label1.Location = new Point(368, 107);
             label1.Name = "label1";
             label1.Size = new Size(243, 37);
             label1.TabIndex = 28;
@@ -78,6 +77,7 @@
             BackButton.TabIndex = 26;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // BuyButton
             // 
@@ -88,6 +88,7 @@
             BuyButton.TabIndex = 25;
             BuyButton.Text = "Buy";
             BuyButton.UseVisualStyleBackColor = true;
+            BuyButton.Click += BuyButton_Click;
             // 
             // QuantityBox
             // 
@@ -118,16 +119,6 @@
             Price.TabIndex = 22;
             Price.Text = "[Price]";
             // 
-            // ProdDescription1
-            // 
-            ProdDescription1.AutoSize = true;
-            ProdDescription1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ProdDescription1.Location = new Point(379, 114);
-            ProdDescription1.Name = "ProdDescription1";
-            ProdDescription1.Size = new Size(150, 20);
-            ProdDescription1.TabIndex = 21;
-            ProdDescription1.Text = "[Product Description]";
-            // 
             // flag
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -141,9 +132,9 @@
             Controls.Add(QuantityBox);
             Controls.Add(QuantityText);
             Controls.Add(Price);
-            Controls.Add(ProdDescription1);
             Name = "flag";
-            Text = "flag";
+            Text = "Cherry On Top Flag";
+            Load += flag_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -159,6 +150,5 @@
         private TextBox QuantityBox;
         private Label QuantityText;
         private Label Price;
-        private Label ProdDescription1;
     }
 }

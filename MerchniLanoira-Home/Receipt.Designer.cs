@@ -75,7 +75,7 @@ namespace MerchniLanoira_Home
             label3.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(30, 33);
             label3.Name = "label3";
-            label3.Size = new Size(231, 30);
+            label3.Size = new Size(229, 30);
             label3.TabIndex = 11;
             label3.Text = "Payment Confirmation";
             label3.Click += label3_Click;
@@ -84,7 +84,7 @@ namespace MerchniLanoira_Home
             // 
             Qty.AutoSize = true;
             Qty.Font = new Font("Yu Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Qty.Location = new Point(260, 168);
+            Qty.Location = new Point(102, 170);
             Qty.Name = "Qty";
             Qty.Size = new Size(73, 17);
             Qty.TabIndex = 6;
@@ -131,7 +131,7 @@ namespace MerchniLanoira_Home
             // 
             ProductName.AutoSize = true;
             ProductName.Font = new Font("Yu Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ProductName.Location = new Point(224, 140);
+            ProductName.Location = new Point(102, 140);
             ProductName.Name = "ProductName";
             ProductName.Size = new Size(110, 17);
             ProductName.TabIndex = 1;

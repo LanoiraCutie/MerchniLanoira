@@ -93,6 +93,7 @@
             BackButton.TabIndex = 44;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // pictureBox3
             // 
@@ -104,6 +105,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 49;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox1
             // 
@@ -115,6 +117,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 50;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // mugs
             // 
@@ -129,7 +132,7 @@
             Controls.Add(label1);
             Controls.Add(BackButton);
             Name = "mugs";
-            Text = "mugs";
+            Text = "Mugs";
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

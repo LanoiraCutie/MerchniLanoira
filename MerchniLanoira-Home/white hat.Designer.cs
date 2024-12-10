@@ -37,7 +37,6 @@
             QuantityBox = new TextBox();
             QuantityText = new Label();
             Price = new Label();
-            ProdDescription1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -56,11 +55,12 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(368, 68);
+            label1.Location = new Point(368, 102);
             label1.Name = "label1";
             label1.Size = new Size(293, 74);
             label1.TabIndex = 37;
             label1.Text = "Cherry On Top Organic \r\nBucket Hat [Bio White]";
+            label1.Click += label1_Click;
             // 
             // Picture
             // 
@@ -78,6 +78,7 @@
             BackButton.TabIndex = 35;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // BuyButton
             // 
@@ -88,6 +89,7 @@
             BuyButton.TabIndex = 34;
             BuyButton.Text = "Buy";
             BuyButton.UseVisualStyleBackColor = true;
+            BuyButton.Click += BuyButton_Click;
             // 
             // QuantityBox
             // 
@@ -118,16 +120,6 @@
             Price.TabIndex = 31;
             Price.Text = "[Price]";
             // 
-            // ProdDescription1
-            // 
-            ProdDescription1.AutoSize = true;
-            ProdDescription1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ProdDescription1.Location = new Point(380, 156);
-            ProdDescription1.Name = "ProdDescription1";
-            ProdDescription1.Size = new Size(150, 20);
-            ProdDescription1.TabIndex = 30;
-            ProdDescription1.Text = "[Product Description]";
-            // 
             // white_hat
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -141,9 +133,8 @@
             Controls.Add(QuantityBox);
             Controls.Add(QuantityText);
             Controls.Add(Price);
-            Controls.Add(ProdDescription1);
             Name = "white_hat";
-            Text = "white_hat";
+            Text = "Cherry On Top Organic Bucket Hat [Bio White]";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -159,6 +150,5 @@
         private TextBox QuantityBox;
         private Label QuantityText;
         private Label Price;
-        private Label ProdDescription1;
     }
 }

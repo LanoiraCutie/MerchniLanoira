@@ -12,11 +12,12 @@ namespace MerchniLanoira_Home
 {
     public partial class Product1 : Form
     {
-        String prodBuy = "";
-        double price = 25 * 58;
+        String prodtoBuy = "Cherry On Top Mug [Red]";
+        int price = 25 * 58;
         public Product1()
         {
             InitializeComponent();
+            Price.Text = "P" + price;
         }
 
         private void Price_Click(object sender, EventArgs e)
@@ -36,36 +37,25 @@ namespace MerchniLanoira_Home
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            HomePage home = new HomePage();
             this.Hide();
-            home.Show();
-        }
-
-        private void ColorCombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (ColorCombo.SelectedIndex == 0)
-            {
-                prodBuy = "Red Cherry On Top Mug";
-            }
-            else if (ColorCombo.SelectedIndex == 1)
-            {
-                prodBuy = "Pink Cherry On Top Mug";
-            }
+            HomePage homePage = new HomePage();
+            homePage.Show();
         }
 
         private void BuyButton_Click(object sender, EventArgs e)
         {
             try
             {
-                double quantity = Convert.ToDouble(QuantityBox.Text);
-                double totalPrice = price * quantity;
-                Receipt rc = new Receipt(prodBuy, quantity, totalPrice);
-                rc.Show();
+                int quantity = Convert.ToInt32(QuantityBox.Text);
+                int totalprice = quantity * price;
+                Receipt receipt = new Receipt(prodtoBuy, quantity, totalprice);
+                receipt.Show();
             }
             catch (Exception)
             {
-                MessageBox.Show("Please enter a number for quantity.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter number in Quantity. No spaces!.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
 
         }
 

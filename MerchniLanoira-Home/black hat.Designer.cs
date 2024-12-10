@@ -37,7 +37,6 @@
             QuantityBox = new TextBox();
             QuantityText = new Label();
             Price = new Label();
-            ProdDescription1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -56,11 +55,12 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(368, 68);
+            label1.Location = new Point(368, 95);
             label1.Name = "label1";
             label1.Size = new Size(293, 74);
             label1.TabIndex = 28;
             label1.Text = "Cherry On Top Organic \r\nBucket Hat [Black]";
+            label1.Click += label1_Click;
             // 
             // Picture
             // 
@@ -78,6 +78,7 @@
             BackButton.TabIndex = 26;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // BuyButton
             // 
@@ -88,6 +89,7 @@
             BuyButton.TabIndex = 25;
             BuyButton.Text = "Buy";
             BuyButton.UseVisualStyleBackColor = true;
+            BuyButton.Click += BuyButton_Click;
             // 
             // QuantityBox
             // 
@@ -117,16 +119,7 @@
             Price.Size = new Size(66, 25);
             Price.TabIndex = 22;
             Price.Text = "[Price]";
-            // 
-            // ProdDescription1
-            // 
-            ProdDescription1.AutoSize = true;
-            ProdDescription1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ProdDescription1.Location = new Point(380, 156);
-            ProdDescription1.Name = "ProdDescription1";
-            ProdDescription1.Size = new Size(150, 20);
-            ProdDescription1.TabIndex = 21;
-            ProdDescription1.Text = "[Product Description]";
+            Price.Click += Price_Click;
             // 
             // black_hat
             // 
@@ -141,9 +134,9 @@
             Controls.Add(QuantityBox);
             Controls.Add(QuantityText);
             Controls.Add(Price);
-            Controls.Add(ProdDescription1);
             Name = "black_hat";
-            Text = "black_hat";
+            Text = "Cherry On Top Organic Bucket Hat [Black]";
+            Load += black_hat_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -159,6 +152,5 @@
         private TextBox QuantityBox;
         private Label QuantityText;
         private Label Price;
-        private Label ProdDescription1;
     }
 }

@@ -15,3 +15,15 @@ namespace MerchniLanoira_Home
         }
     }
 }
+
+//BINI MERCHANDISE SHOP
+/* Developers:
+ * Talavera, Lex Erichson S. [LanoiraCutie]
+ * Acob, Adrian A. [Axzusa]
+ * Radomes, Kurt Jimuel A. (Reporter yan)
+ */
+
+/* BETA VER 0.1.0 (Prototype)
+ * First Prototype and Interfaces.
+ * 100% Magical.
+ */

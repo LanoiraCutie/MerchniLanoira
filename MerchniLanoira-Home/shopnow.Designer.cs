@@ -56,6 +56,7 @@
             BackButton.TabIndex = 44;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // pictureBox2
             // 
@@ -67,6 +68,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 43;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
@@ -78,6 +80,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 42;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox3
             // 
@@ -89,6 +92,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 50;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 
@@ -100,6 +104,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 51;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox5
             // 
@@ -111,6 +116,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 59;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox6
             // 
@@ -122,6 +128,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 60;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox7
             // 
@@ -133,6 +140,7 @@
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 61;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // pictureBox8
             // 
@@ -144,6 +152,7 @@
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 62;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // shopnow
             // 
@@ -160,7 +169,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "shopnow";
-            Text = "shopnow";
+            Text = "BINI Merchandise Shop";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

@@ -37,7 +37,6 @@
             QuantityBox = new TextBox();
             QuantityText = new Label();
             Price = new Label();
-            ProdDescription1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -45,7 +44,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(360, 68);
+            label1.Location = new Point(371, 103);
             label1.Name = "label1";
             label1.Size = new Size(351, 74);
             label1.TabIndex = 38;
@@ -79,6 +78,7 @@
             BackButton.TabIndex = 35;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // BuyButton
             // 
@@ -89,6 +89,7 @@
             BuyButton.TabIndex = 34;
             BuyButton.Text = "Buy";
             BuyButton.UseVisualStyleBackColor = true;
+            BuyButton.Click += BuyButton_Click;
             // 
             // QuantityBox
             // 
@@ -119,16 +120,6 @@
             Price.TabIndex = 31;
             Price.Text = "[Price]";
             // 
-            // ProdDescription1
-            // 
-            ProdDescription1.AutoSize = true;
-            ProdDescription1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ProdDescription1.Location = new Point(371, 163);
-            ProdDescription1.Name = "ProdDescription1";
-            ProdDescription1.Size = new Size(150, 20);
-            ProdDescription1.TabIndex = 30;
-            ProdDescription1.Text = "[Product Description]";
-            // 
             // light_pink_crewneck
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -142,9 +133,8 @@
             Controls.Add(QuantityBox);
             Controls.Add(QuantityText);
             Controls.Add(Price);
-            Controls.Add(ProdDescription1);
             Name = "light_pink_crewneck";
-            Text = "light_pink_crewneck";
+            Text = "Cherry Crewneck Sweatshirt [Light Pink]";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -160,6 +150,5 @@
         private TextBox QuantityBox;
         private Label QuantityText;
         private Label Price;
-        private Label ProdDescription1;
     }
 }

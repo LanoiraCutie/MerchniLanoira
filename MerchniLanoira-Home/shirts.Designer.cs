@@ -50,6 +50,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 29;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -61,6 +62,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 30;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click_1;
             // 
             // BackButton
             // 
@@ -70,6 +72,7 @@
             BackButton.TabIndex = 31;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // label1
             // 
@@ -128,7 +131,8 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "shirts";
-            Text = "shirts";
+            Text = "Shirts";
+            Load += shirts_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

@@ -121,6 +121,7 @@
             label1.Size = new Size(47, 20);
             label1.TabIndex = 22;
             label1.Text = "Shirts";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -133,6 +134,7 @@
             label2.Size = new Size(47, 20);
             label2.TabIndex = 23;
             label2.Text = "Mugs";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -145,6 +147,7 @@
             label3.Size = new Size(39, 20);
             label3.TabIndex = 24;
             label3.Text = "Hats";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
@@ -182,6 +185,7 @@
             button1.TabIndex = 27;
             button1.Text = "Shop Now";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label6
             // 
@@ -194,6 +198,7 @@
             label6.Size = new Size(54, 20);
             label6.TabIndex = 28;
             label6.Text = "Others";
+            label6.Click += label6_Click;
             // 
             // HomePage
             // 
@@ -218,8 +223,10 @@
             Controls.Add(WelcomeText);
             DoubleBuffered = true;
             Name = "HomePage";
-            Text = "                   ";
+            Text = "Welcome to BINI Merchandise Shop!         ";
+            FormClosing += HomePage_FormClosing;
             Load += HomePage_Load;
+            Leave += GProductText3_Click;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

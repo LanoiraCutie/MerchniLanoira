@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product1));
-            ProdDescription1 = new Label();
             Price = new Label();
             QuantityText = new Label();
             QuantityBox = new TextBox();
@@ -40,16 +39,6 @@
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // ProdDescription1
-            // 
-            ProdDescription1.AutoSize = true;
-            ProdDescription1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ProdDescription1.Location = new Point(379, 114);
-            ProdDescription1.Name = "ProdDescription1";
-            ProdDescription1.Size = new Size(150, 20);
-            ProdDescription1.TabIndex = 0;
-            ProdDescription1.Text = "[Product Description]";
             // 
             // Price
             // 
@@ -115,7 +104,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(368, 68);
+            label1.Location = new Point(368, 112);
             label1.Name = "label1";
             label1.Size = new Size(317, 37);
             label1.TabIndex = 11;
@@ -147,10 +136,9 @@
             Controls.Add(QuantityBox);
             Controls.Add(QuantityText);
             Controls.Add(Price);
-            Controls.Add(ProdDescription1);
             DoubleBuffered = true;
             Name = "Product1";
-            Text = "Product1";
+            Text = "Cherry On Top Mug [Red]";
             Load += Product1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -158,8 +146,6 @@
         }
 
         #endregion
-
-        private Label ProdDescription1;
         private Label Price;
         private Label QuantityText;
         private TextBox QuantityBox;
